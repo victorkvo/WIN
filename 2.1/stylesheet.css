@@ -1,0 +1,167 @@
+h1 {
+  color: blue;
+  font-size: 70px;
+}
+
+P {
+  color: red;
+}
+
+#suitcase {
+  color: sienna;
+}
+
+#uber {
+  color: chartreuse;
+  font-size: 30px;
+}
+
+.mini-font {
+    color: black;
+    font-size: 25px;
+}
+
+#yuge{
+    color:orange;
+    font-size: 40px;
+}
+
+.ninja{
+    color:seagreen;
+    font-size: 25px;
+}
+body{
+    background-color: skyblue;
+    margin-bottom: 300px;
+}
+
+button{
+    padding: 18px;
+    background-color: steelblue;
+    color:black;
+}
+
+button:hover{
+    background-color: white;
+    color:aqua;
+}
+
+a:link{
+    color:green;
+}
+
+a:link:hover{
+    color: blue;
+}
+
+a:link:visited{
+    color:plum;
+}
+
+div p{
+    color:royalblue;
+}
+
+#diff p{
+    color:indigo;
+}
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+	
+.rcorners1 {
+    border-radius: 15px 50px 30px 5px;
+    background: #73AD21;
+    padding: 20px;
+    margin:20px;
+    width: 200px;
+    height: 150px;
+  }
+   
+  .rcorners2 {
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    margin:20px;
+    width: 200px;
+    height: 150px;
+  }
+   
+  .rcorners3 {
+    border-radius: 15px / 50px;
+    background: #73AD21;
+    padding: 20px;
+    margin:20px;
+    width: 200px;
+    height: 150px;
+  }
+   
+  .rcorners4{
+    border-radius: 50%;
+    background: #73AD21;
+    padding: 20px;
+    margin:20px;
+    width: 200px;
+    height: 150px;
+  }
+
+  div.static {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+  div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+  }
+
+  div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+  }
+
+  div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+  }
+  
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }
+
+  div.sticky {
+    position: -webkit-sticky; /* Needed for Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+  }
+
+  img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }

@@ -1,12 +1,27 @@
-/* abstraction is like the keyboard. we type a word and it is inputted into the computer. We do not have to worry about the means.
+// reference: https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation
 
-encapsulation
+// **
+// Add the following HTML code to your HTML file - don't forget to link your js!
+// ----- html start here
+// <!-- The DOM -->
+// <body>
+//   <h1>
+//     THE TITLE OF YOUR WEBPAGE
+//   </h1>
+//   <div id="container">
+//   	<div class="content">
+//       This is the glorious text-content!
+//     </div>
+//   </div>
+// </body>
+// --- html end here
 
-inheritance
-a physical keyboard and an onboard keyboard, although they have different keystroke lengths, pressing A will return A
+// // TASK: 
+// Add the following elements to the container using ONLY javascript - do not add any HTML or CSS code.
 
-
-polymorphism
-a key binding: 
-*/
-
+// a <p> with red text that says “Hey I’m red!”
+// an <h3> with blue text that says “I’m a blue h3!”
+// a <div> with a black border and pink background color with the following elements inside of it:
+// another <h1> that says “I’m in a div”
+// a <p> that says “ME TOO!”
+// Hint for this one: after creating the div with createElement, append the <h1> and <p> to it before adding it to the container.

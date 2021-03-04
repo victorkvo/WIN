@@ -1,6 +1,6 @@
-function myFunction(list){
+function myFunction(){
     var text = "";
-    var inputs = document.querySelectorAll("input[type=text]");
+    var inputs = document.querySelectorAll("input");
     for (var i = 0; i < inputs.length; i++) {
         text += inputs[i].value;
     }
@@ -14,7 +14,7 @@ function myFunction(list){
 list = document.getElementById('list');
 list.addEventListener('click', function(event){
     setTimeout(function(){
-    document.getElementById('list').removeChild(list.children[0]);}, 2000) 
+    document.getElementById('list').removeChild(event.target);}, 2000) 
 })
 
 

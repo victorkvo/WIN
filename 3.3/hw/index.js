@@ -13,6 +13,8 @@ function myFunction(list){
 
 list = document.getElementById('list');
 list.addEventListener('click', function(event){
-  
-	document.getElementById('list').removeChild(list.children[0]); 
+    setTimeout(function(){
+    document.getElementById('list').removeChild(list.children[0]);}, 2000) 
 })
+
+

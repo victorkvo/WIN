@@ -11,4 +11,8 @@ function myFunction(list){
     document.getElementById('toDo').value='';
 }
 
-
+list = document.getElementById('list');
+list.addEventListener('click', function(event){
+  
+	document.getElementById('list').removeChild(list.children[0]); 
+})

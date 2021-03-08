@@ -11,10 +11,9 @@ function myFunction(){
     document.getElementById('toDo').value='';
 }
 
-list = document.getElementById('list');
-list.addEventListener('click', function(event){
-    setTimeout(function(){
-    document.getElementById('list').removeChild(event.target);}, 2000) 
-})
 
-
+    list = document.getElementById('list');
+    list.addEventListener('click', function(event){
+        setTimeout(function(){
+        document.getElementById('list').removeChild(event.target);}, 2000) 
+    })

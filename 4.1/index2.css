@@ -2,7 +2,7 @@ body {
     margin: 10px auto;
     min-width: 250px;
     max-width: 50%;
-    background-color: silver;
+    background-color: black;
   }
   * {
     box-sizing: border-box;
@@ -117,8 +117,6 @@ body {
     color: white;
   }   
 
-
   .editBtn{
-    
     background-color: rgb(86, 62, 193);
 }

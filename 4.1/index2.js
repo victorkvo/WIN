@@ -19,8 +19,6 @@ for (i = 0; i < close.length; i++) {
 }
 
 
-
-
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -48,14 +46,18 @@ function newElement() {
   span.appendChild(txt);
   li.appendChild(span);
 
+
   var editBtn = document.createElement('button');
-  var buttonName = document.createTextNode('edit')
-  editBtn.onclick = function(){
-      editWorking(li);
-  }
-  editBtn.appendChild(buttonName);
-  li.appendChild(editBtn);
- 
+        editBtn.innerHTML = '<i class="far fa-edit"></i>';
+        editBtn.classList.add('editBtn');
+        editBtn.onclick = function(){
+            editWorking(myInput);
+        }
+    button.appendChild(txt);
+    li.appendChild(button);
+
+
+
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
         var div = this.parentElement;
@@ -74,6 +76,6 @@ let person = prompt("Please name your list")
 document.getElementById("heading").innerHTML = person;
 
 function editWorking(e){
-  var editValue = prompt('edit the select item', e.firstChild.nodeValue);
-  e.firstChild.nodeValue = editValue;
+    var editValue = prompt('edit the select item', e.firstChild.nodeValue);
+    e.firstChild.nodeValue = editValue;
 }

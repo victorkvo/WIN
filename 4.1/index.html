@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="header">
-        <h2 id="heading">To Do List</h2>
-        <input type="text" id="myInput" placeholder="New To Do...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-        <a href="#" target="_blank"><button onclick="">Create a new list</button></a>
-      </div>
-      <ul id="myUL">
-       
-      </ul>
-      <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+  </head>
+
+  <body>
       
+      <div class="container-fluid bg-2 text-center" id="">  
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#" target="_blank"
+                ><button onclick="">Create a new list</button></a>
+              </div>  
+            </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-2 text-center" id="">     
+        <div class="container text-left">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="header111">
+                    <h2 id="heading">To Do List</h2>
+                    <input type="text" id="myInput" placeholder="New To Do..." />
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                  </div>
+                  <ul id="myUL" ></ul>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+
+    <div class="container-fluid bg-2 text-center" >
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <button type="button" id="clear-list" onclick="removeAll()">
+                    Clear Items
+                </button>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+  
+
+
+
+<iframe width="0" height="0" src="https://www.youtube.com/watch?v=qLTKOZedvq4?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

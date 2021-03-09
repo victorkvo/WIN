@@ -19,6 +19,8 @@ for (i = 0; i < close.length; i++) {
 }
 
 
+
+
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -29,7 +31,8 @@ list.addEventListener('click', function(ev) {
 
 
 function newElement() {
-  var li = document.createElement("li");
+    // list item
+  var li = document.createElement("li"); li.id='listyle';
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);
@@ -40,6 +43,18 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
 
+    //due date
+    var dd = document.createElement("li"); dd.id='ddstyle';
+    var inputDD = document.getElementById("dueDate").value;
+    var d = document.createTextNode(inputDD);
+    dd.appendChild(d);
+    document.getElementById("myDD").appendChild(dd);
+    document.getElementById("dueDate").value = "";
+    
+  
+
+
+  // delete item button
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -47,17 +62,19 @@ function newElement() {
   li.appendChild(span);
 
 
-  var editBtn = document.createElement('button');
-        editBtn.innerHTML = '<i class="far fa-edit"></i>';
-        editBtn.classList.add('editBtn');
-        editBtn.onclick = function(){
-            editWorking(myInput);
-        }
-    button.appendChild(txt);
-    li.appendChild(button);
-
-
-
+  // edit list values
+  var editBtn = document.createElement('button'); editBtn.id='butstyle';
+  var buttonName = document.createTextNode('EDIT');
+  editBtn.onclick = function(){
+      editWorking(li);
+      editWorking(dd);
+  }
+  editBtn.appendChild(buttonName);
+  li.appendChild(editBtn);
+  editBtn.appendChild(buttonName);
+  dd.appendChild(editBtn);
+  
+ 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
         var div = this.parentElement;
@@ -68,6 +85,7 @@ function newElement() {
 
 function removeAll(){
   var lst = document.getElementsByTagName("ul");
+
     lst[0].innerHTML = "";
 }
 
@@ -75,7 +93,9 @@ function removeAll(){
 let person = prompt("Please name your list")
 document.getElementById("heading").innerHTML = person;
 
+// edit list values
 function editWorking(e){
-    var editValue = prompt('edit the select item', e.firstChild.nodeValue);
-    e.firstChild.nodeValue = editValue;
+  var editValue = prompt('edit the selected item', e.firstChild.nodeValue);
+  e.firstChild.nodeValue = editValue;
 }
+

@@ -2,14 +2,14 @@ body {
     margin: 10px auto;
     min-width: 250px;
     max-width: 50%;
-    background-color: black;
+    background-color: silver;
   }
   * {
     box-sizing: border-box;
   }
- #heading{
-     margin: 5px;
- }
+  .heading {
+    margin: 5px;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -23,27 +23,25 @@ body {
     font-size: 18px;
     transition: 0.2s;
   
-    
-   -webkit-user-select: none;
+    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
   
-  
-   ul li:nth-child(odd) {
-  background: #f9f9f9;
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
   }
   ul li:hover {
     background: #ddd;
   }
   ul li.checked {
-    background:green;
+    background: green;
     color: white;
-    text-decoration:line-through;
+    text-decoration: line-through;
   }
   ul li.checked::before {
-    content: '';
+    content: "";
     position: absolute;
     border-color: #fff;
     border-style: solid;
@@ -53,9 +51,8 @@ body {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  } 
+  }
   
-
   .close {
     position: absolute;
     right: 0;
@@ -68,7 +65,7 @@ body {
     color: white;
   }
   .header {
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -102,21 +99,28 @@ body {
   .addBtn:hover {
     background-color: #bbb;
   }
-  #clear-list{
+  #clear-list {
     width: 30%;
     font-weight: bold;
     font-style: italic;
     font-size: xx-large;
     font-family: "Times New Roman";
     margin: 40px 35%;
-    background-color:darkolivegreen;
+    background-color: darkolivegreen;
     color: white;
   }
-  #clear-list:hover{
+  #clear-list:hover {
     background-color: blue;
     color: white;
-  }   
-
-  .editBtn{
+  }
+  
+  .editBtn {
     background-color: rgb(86, 62, 193);
-}
+  }
+  
+  #butstyle {
+    padding-top: 5px;
+    margin-right: 40px;
+    float: right;
+  }
+  

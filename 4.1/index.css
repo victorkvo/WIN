@@ -1,124 +1,137 @@
 body {
-    margin: 10px auto;
-    min-width: 250px;
-    max-width: 50%;
-    background-color: silver;
-  }
-  * {
-    box-sizing: border-box;
-  }
- #heading{
-     margin: 5px;
- }
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
-    list-style-type: none;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-  
-    
-   -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  
-   ul li:nth-child(odd) {
-  background: #f9f9f9;
-  }
-  ul li:hover {
-    background: #ddd;
-  }
-  ul li.checked {
-    background:green;
-    color: white;
-    text-decoration:line-through;
-  }
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  } 
-  
+  margin: auto;
+  min-width: 250px;
+  max-width: 50%;
+  background: url("https://images.unsplash.com/photo-1615281223824-ab0865ae44e4?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60") ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+* {
+  box-sizing: border-box;
+}
+#heading {
+  margin: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 24px 8px 24px 40px;
+  list-style-type: none;
+  background-image:url('https://img1.pnghut.com/19/7/18/10n96r5JZ6/notebook-paper-post-it-notes-super-sticky-postit-note-adhesive.jpg');
+  background:beige;
+  font-size: 50px;
+  transition: 0.2s;
+  color: black;
 
-  .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
-    background-color: crimson;
-    color: white;
-  }
-  .header {
-    background-color:darkolivegreen;
-    padding: 30px 40px;
-    color: white;
-    text-align: center;
-  }
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-  }
-  .addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-  }
-  .addBtn:hover {
-    background-color: #bbb;
-  }
-  #clear-list{
-    width: 30%;
-    font-weight: bold;
-    font-style: italic;
-    font-size: xx-large;
-    font-family: "Times New Roman";
-    margin: 40px 35%;
-    background-color:darkolivegreen;
-    color: white;
-  }
-  #clear-list:hover{
-    background-color: blue;
-    color: white;
-  }   
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 
-  .editBtn{
-    
-    background-color: rgb(86, 62, 193);
+ul li:nth-child(odd) {
+  background-image: url('https://image.freepik.com/free-photo/colorful-blank-sticky-notes-cork-board_23-2147890055.jpg');
+  background:grey;
+}
+ul li:hover {
+  background: #ddd;
+  
+}
+ul li.checked {
+  background: green;
+  color: white;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: crimson;
+  color: white;
+}
+.header111 {
+  background-color: rgb(25, 27, 22);
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header111:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn:hover {
+  background-color: #bbb;
+}
+#clear-list {
+  width: 30%;
+  font-weight: bold;
+  font-style: italic;
+  font-size: xx-large;
+  font-family: "Times New Roman";
+  margin: 40px 35%;
+  background-color: darkolivegreen;
+  color: white;
+}
+#clear-list:hover {
+  background-color: blue;
+  color: white;
+}
+
+#butstyle {
+  padding-top: 0px;
+  margin-right: 40px;
+  float: right;
+}
+
+#clearcolor{
+
+  background-color:hotpink;
+}
+
+#myInput{
+  color: black;
 }

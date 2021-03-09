@@ -11,6 +11,7 @@ body {
 }
 #heading {
   margin: 5px;
+  padding-bottom: 20px;
 }
 ul {
   margin: 0;
@@ -19,18 +20,13 @@ ul {
 ul li {
   cursor: pointer;
   position: relative;
-  padding: 24px 8px 24px 40px;
+  padding: 10px 8px 10px 40px;
   list-style-type: none;
   background-image:url('https://img1.pnghut.com/19/7/18/10n96r5JZ6/notebook-paper-post-it-notes-super-sticky-postit-note-adhesive.jpg');
   background:beige;
-  font-size: 50px;
+  font-size: 24px;
   transition: 0.2s;
   color: black;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 
@@ -98,7 +94,7 @@ input {
   color: #555;
   float: left;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0;
@@ -113,8 +109,8 @@ input {
   font-size: xx-large;
   font-family: "Times New Roman";
   margin: 40px 35%;
-  background-color: darkolivegreen;
-  color: white;
+  background-color: rgb(182, 192, 166);
+  color: black;
 }
 #clear-list:hover {
   background-color: blue;
@@ -127,11 +123,18 @@ input {
   float: right;
 }
 
-#clearcolor{
-
-  background-color:hotpink;
-}
-
 #myInput{
   color: black;
+  font-size: 24px;
+}
+
+#bts{
+  padding: 10px 30px 10px 30px;
+  font-size: 20px;
+  background-color: royalblue;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

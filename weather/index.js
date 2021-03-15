@@ -75,24 +75,24 @@ function getDressed(e) {
 
       // dog clothing if/else statements
       if (result.weather[0].main == "Rain") {
-        document.getElementById("clothes").src = "/weather/images/raincoat.jpg";
-        document.getElementById("shoes").src = "/weather/images/rainboots.jpg";
-        document.getElementById("access").src = "/weather/images/umbrella.jpg";
+        document.getElementById("clothes").src = "/WIN/weather/images/raincoat.jpg";
+        document.getElementById("shoes").src = "/WIN/weather/images/rainboots.jpg";
+        document.getElementById("access").src = "/WIN/weather/images/umbrella.jpg";
         condition.innerHTML = "Rainy";
       } else if (result.weather[0].main !== "Rain" && result.main.temp >= 80) {
-        document.getElementById("clothes").src = "/weather/images/tank.jpg";
-        document.getElementById("shoes").src = "/weather/images/jordans.jpg";
-        document.getElementById("access").src = "/weather/images/sunglass.jpg";
+        document.getElementById("clothes").src = "/WIN/weather/images/tank.jpg";
+        document.getElementById("shoes").src = "/WIN/weather/images/jordans.jpg";
+        document.getElementById("access").src = "/WIN/weather/images/sunglass.jpg";
         condition.innerHTML = "Not Rainy";
       } else if (result.weather[0].main !== "Rain" && result.main.temp <= 60) {
-        document.getElementById("clothes").src = "/weather/images/sweater.jpg";
-        document.getElementById("shoes").src = "/weather/images/jordans.jpg";
-        document.getElementById("access").src = "/weather/images/sunglass.jpg";
+        document.getElementById("clothes").src = "/WIN/weather/images/sweater.jpg";
+        document.getElementById("shoes").src = "/WIN/weather/images/jordans.jpg";
+        document.getElementById("access").src = "/WIN/weather/images/sunglass.jpg";
         condition.innerHTML = "Not Rainy";
       } else {
-        document.getElementById("clothes").src = "/weather/images/button.jpg";
-        document.getElementById("shoes").src = "/weather/images/jordans.jpg";
-        document.getElementById("access").src = "/weather/images/sunglass.jpg";
+        document.getElementById("clothes").src = "/WIN/weather/images/button.jpg";
+        document.getElementById("shoes").src = "/WIN/weather/images/jordans.jpg";
+        document.getElementById("access").src = "/WIN/weather/images/sunglass.jpg";
         condition.innerHTML = "Not Rainy";
       }
       // clears search bar input

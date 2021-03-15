@@ -21,20 +21,20 @@
  
  
 
-//   async function city(cityName) {
-//     let response = fetch(`https://geocode.xyz/${cityName}?json=1`)
-//     .then((response) => response.json())
-//     .then((result) => {
-//         console.log(result);
-//         console.log(result.longt);
-//         console.log(result.latt);
-//         console.log(result.alt.loc.latt)
-//         console.log(result.alt.loc.longt)
-//         document.getElementById("one").innerHTML=result.latt;
-//         document.getElementById("two").innerHTML=result.alt.loc.longt;
+  async function city(cityName) {
+    let response = fetch(`https://geocode.xyz/${cityName}?json=1`)
+    .then((response) => response.json())
+    .then((result) => {
+        console.log(result);
+        console.log(result.longt);
+        console.log(result.latt);
+        console.log(result.alt.loc.latt)
+        console.log(result.alt.loc.longt)
+        document.getElementById("one").innerHTML=result.latt;
+        document.getElementById("two").innerHTML=result.alt.loc.longt;
         
-//     })
-//     .catch((error) => console.log("error", error));
+    })
+    .catch((error) => console.log("error", error));
     
-// }
-// city("Seattle");
+}
+city("Seattle");

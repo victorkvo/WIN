@@ -5,19 +5,19 @@
 
 
 
-// function getRandomNumber() {
-//     let promise = new Promise((resolve, reject)=>{
-//       setTimeout(() => resolve(Math.floor(Math.random() * 8)), 500)
-//     });
-//     return promise;
-// }
+function getRandomNumber() {
+    let promise = new Promise((resolve, reject)=>{
+      setTimeout(() => resolve(Math.floor(Math.random() * 8)), 500)
+    });
+    return promise;
+}
 
-// async function call(){
-//    let result = await getRandomNumber();;
-//      console.log(result); 
-// }
+async function call(){
+   let result = await getRandomNumber();;
+     console.log(result); 
+}
 
-// call();
+call();
  
  
 
@@ -25,11 +25,9 @@
     let response = fetch(`https://geocode.xyz/${cityName}?json=1`)
     .then((response) => response.json())
     .then((result) => {
-        console.log(result);
+        console.log(cityName);
         console.log(result.longt);
         console.log(result.latt);
-        console.log(result.alt.loc.latt)
-        console.log(result.alt.loc.longt)
         document.getElementById("one").innerHTML=result.latt;
         document.getElementById("two").innerHTML=result.alt.loc.longt;
         
@@ -38,3 +36,5 @@
     
 }
 city("Seattle");
+city("Houston");
+city("Charlotte");

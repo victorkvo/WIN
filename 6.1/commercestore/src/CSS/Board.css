@@ -1,0 +1,23 @@
+.div-board {
+    margin: 1rem 15px 0;
+    /* border: solid #f7f7f9;
+    background-color: white; */
+  }
+  
+  .add {
+    margin: 1rem 15px 0;
+  }
+
+/* .row img {
+  width: 50%;
+  height: 50%;
+  margin: 50px;
+} */
+
+.jumbotron {
+  background-image: url("https://hypebeast.com/image/2016/09/starting-your-own-sneaker-consignment-shop-000001.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}

@@ -42,3 +42,6 @@ function getDrink(e){
 
 }
 
+<nav class="navbar navbar-light bg-light">
+ 
+</nav>

@@ -15,7 +15,7 @@ function Asearch(e) {
   method: 'GET',
   redirect: 'follow'
 };
-fetch(`http://openlibrary.org/search.json?author=${author}`, requestOptions)
+fetch(`https://openlibrary.org/search.json?author=${author}`, requestOptions)
 
   .then(response => response.json())
   .then((result) => {
